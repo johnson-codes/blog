@@ -87,7 +87,7 @@
         }
         .container {
             max-width: 900px;
-            margin: 10px auto;
+            margin: 190px auto 10px; /* Add margin space above the container */
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 12px;
@@ -97,7 +97,7 @@
         h1 {
             text-align: center;
             color: #2d3748;
-            margin-bottom: 30px;
+            margin-bottom: 70px;
             font-size: 2rem;
             font-weight: 600;
         }
@@ -193,6 +193,7 @@
             width: 80%; /* Set a fixed width for the search container */
             max-width: 480px; /* Optional: limit the maximum width */
             margin: 0; /* Remove any default margin */
+            margin-bottom: 50px; /* Add margin space below the search container */
         }
 
         #searchInput {
@@ -970,6 +971,7 @@
             width: 80%; /* Set a fixed width for the search container */
             max-width: 480px; /* Optional: limit the maximum width */
             margin: 0; /* Remove any default margin */
+            margin-bottom: 50px; /* Add margin space below the search container */
         }
 
         #searchInput {
@@ -997,6 +999,11 @@
         .search-container button:hover {
             opacity: 0.9;
         }
+
+        .hero-image-placeholder {
+            height: 300px; /* Adjust the height as needed */
+            background-color: transparent; /* Keep the background transparent */
+        }
     </style>
 </head>
 <body>
@@ -1017,7 +1024,7 @@
             </nav>
         </nav>
     </header>
-    <img src="https://raw.githubusercontent.com/Johnson-Frontend/project/refs/heads/main/image/goggle.png" alt="Hero Image" class="hero-image">
+    <div class="hero-image-placeholder"></div>
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="">
         <button onclick="searchProjects()">Search</button>
